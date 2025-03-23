@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Nene!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Music -->
+  
+
+  <!-- Flying Papers -->
+  <div class="papers">
+    <div class="paper paper1"></div>
+    <div class="paper paper2"></div>
+    <div class="paper paper3"></div>
+    <div class="paper paper4"></div>
+    <div class="paper paper5"></div>
+    <div class="paper paper6"></div>
+    <div class="paper paper7"></div>
+    <div class="paper paper8"></div>
+    <div class="paper paper9"></div>
+  </div>
+
+  <!-- Floating Hearts -->
+  <div class="hearts">
+    <div class="heart heart1">❤️</div>
+    <div class="heart heart2">❤️</div>
+    <div class="heart heart3">❤️</div>
+    <div class="heart heart4">❤️</div>
+    <div class="heart heart5">❤️</div>
+   
+  </div>
+
+  <!-- Content -->
+  <div class="container">
+    <h1 class="title"></h1>
+    <div class="balloons">
+      <a href="happy-birthday.html" class="balloon balloon1">🎈</a>
+      <a href="memories.html" class="balloon balloon2">🎈</a>
+      <a href="message.html" class="balloon balloon3">🎈</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+  <script>
+    // Trigger confetti on page load
+    window.onload = function() {
+      confetti({
+        particleCount: 300,
+        spread: 90,
+        origin: { y: 0.8 }
+      });
+    };
+  </script>
+</body>
+</html>

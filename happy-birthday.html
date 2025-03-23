@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, [Her Name]!</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body{
+    background: linear-gradient(135deg, #7d86ec, #f3977e);}
+     </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Happy Birthday, <span class="name"> my bestiee<br>and biggest blessing! </span>! 🎉🎂</h1>
+    <p class="message"> I’m so grateful for your kindness, laughter, and endless support.<br> May this year bring you all the happiness you deserve! ✨🎉</p>
+    <a href="index.html" class="back-btn">Back to Balloons 🎈</a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+  <script >// Cursor Effects
+    document.addEventListener('mousemove', function(e) {
+      const cursor = document.createElement('div');
+      cursor.classList.add('cursor-effect');
+      cursor.style.left = e.pageX + 'px';
+      cursor.style.top = e.pageY + 'px';
+      document.body.appendChild(cursor);
+    
+      setTimeout(() => {
+        cursor.remove();
+      }, 1000);
+    });
+    
+    // Fireworks Effect
+    function createFirework() {
+      const firework = document.createElement('div');
+      firework.classList.add('firework');
+      firework.style.left = Math.random() * 100 + 'vw';
+      firework.style.top = Math.random() * 100 + 'vh';
+      document.body.appendChild(firework);
+    
+      setTimeout(() => {
+        firework.remove();
+      }, 1000);
+    }
+    
+    setInterval(createFirework, 100);
+    window.onload = function() {
+      confetti({
+        particleCount: 100,
+        spread: 1000,
+        origin: { y: 0.6 }
+      });
+    }; // Create a firework every 500ms
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+
+</body>
+</html>
